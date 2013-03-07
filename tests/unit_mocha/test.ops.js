@@ -1,7 +1,7 @@
 var ops = require('../../lib/ops'),
     assert = require('assert');
 
-suite('ops', function() {
+suite('mocha_ops', function() {
   test('add 20+22 should return 42', function() {
     assert.equal(42, ops.add(20, 22));
   });

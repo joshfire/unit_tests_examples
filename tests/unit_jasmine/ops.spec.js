@@ -1,6 +1,6 @@
 var ops = require('../../lib/ops')
 
-describe('ops', function(){
+describe('jasmine_ops', function(){
 
   it('add', function() {
     expect(ops.add(21,21)).toEqual(42);
