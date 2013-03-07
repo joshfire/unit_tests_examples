@@ -1,5 +1,0 @@
-<testsuite name="Mocha Tests" tests="3" failures="0" errors="0" skip="0" timestamp="Thu, 07 Mar 2013 11:28:58 GMT" time="0.002">
-<testcase classname="" name="add should not always return 42" time="0"/>
-<testcase classname="ops" name="add 20+22 should return 42" time="0"/>
-<testcase classname="ops" name="add should support negative numbers" time="0"/>
-</testsuite>
