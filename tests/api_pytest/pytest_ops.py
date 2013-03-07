@@ -8,7 +8,7 @@ server_process = None
 
 def setup_function(function):
   global server_process
-  server_process = subprocess.Popen(['foreman', 'start'])
+  server_process = subprocess.Popen(['node', 'server.js'])
   time.sleep(1)
 
 
@@ -16,11 +16,11 @@ def teardown_function(function):
   assert None == server_process.poll()
   server_process.terminate()
   server_process.wait()
-  assert server_process.returncode == 0
+  assert server_process.returncode == 1
 
 
 def call_add(a, b):
-  a = requests.get("http://localhost:5000/add?a=%d&b=%d" % (a, b))
+  a = requests.get("http://localhost:4242/add?a=%d&b=%d" % (a, b))
   assert a.content
   assert a.status_code == 200
   a = json.loads(a.content)
