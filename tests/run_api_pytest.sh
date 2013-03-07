@@ -5,4 +5,4 @@ cd "$(dirname $0)/../"
 . ./setup/activate
 mkdir -p ./tests/output
 
-py.test --junitxml tests/output/api_pytest.xml tests/api_pytest/api.py
+py.test --junitxml tests/output/api_pytest.xml tests/api_pytest/pytest_ops.py
