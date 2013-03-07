@@ -5,4 +5,4 @@ cd "$(dirname $0)/../"
 . ./setup/activate
 mkdir -p ./tests/output
 
-jasmine-node ./tests/api_jasmine --junitreport --output ./tests/output/
+jasmine-node ./tests/api_jasmine --forceexit --junitreport --output ./tests/output/
