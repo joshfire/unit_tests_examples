@@ -21,7 +21,7 @@ var add = function(a, b, cbAdd) {
   });
 };
 
-describe('api', function(){
+describe('jasmine_ops', function(){
 
   var api_server;
 

@@ -26,7 +26,7 @@ var add = function(a, b, cbAdd) {
 
 var api_server;
 
-suite('ops', function() {
+suite('mocha_ops', function() {
 
   setup(function(done) {
     api_server = spawn('foreman', ['start']);
